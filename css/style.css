@@ -16,11 +16,17 @@
   src: url(../fonts/Montserrat/Montserrat-Light.ttf);
 }
 
+@font-face {
+  font-family: "opensansRegular";
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
 body {
   background: url(../img/goal-css.png) no-repeat 50% 0;
-  /* background-color: grey; */
+  background-color: #ebebeb;
   font-family: "montserraRegular";
   font-size: 16px;
+  line-height: 24px;
 }
 
 h1 {
@@ -30,14 +36,14 @@ h1 {
 article {
   width: 500px;
   margin: 30px auto;
-  /* padding: 20px; */
 }
 
 section {
-  border: 1px solid black;
   padding: 20px;
   margin-bottom: 20px;
-  /* background-color: white; */
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.384);
 }
 article > h2 {
   display: none;
@@ -70,10 +76,8 @@ article > h2 {
 #one p {
   font-size: 14px;
   text-align: justify;
-  line-height: 24px;
   font-family: "montserraRegular";
-
-  letter-spacing: -0.0165em;
+  color: #9c9da3;
 }
 #one p span {
   font-family: "montserraBold";
@@ -90,4 +94,70 @@ article > h2 {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+}
+
+#two h3 {
+  display: none;
+}
+
+#two ul {
+  display: flex;
+  justify-content: space-between;
+  width: 57%;
+  margin: 34px auto;
+}
+
+#two ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #cccccc;
+}
+#two ul li a i {
+  font-size: 1.6em;
+  display: block;
+  text-align: center;
+  color: #cccccc;
+  margin-bottom: 7px;
+}
+
+#three h3 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  color: #7d7d7d;
+  padding: 18px;
+  font-family: "montserraMedium";
+}
+#three h3 span {
+  background-color: #d4d4d4;
+}
+
+#three img {
+  float: left;
+  width: 80px;
+  padding-right: 15px;
+}
+#three ol li {
+  padding: 25px 10px;
+  clear: both;
+}
+#three ol li:first-child img {
+  padding-top: 5px;
+}
+
+#three ol li:nth-child(3) img {
+  padding-top: 38px;
+}
+#three ol li h4 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #8b8b8a;
+}
+
+#three ol li p {
+  text-align: justify;
+  font-family: "opensansRegular";
+  font-size: 15px;
+  padding-left: 100px;
+  color: #8b8b8a;
 }
